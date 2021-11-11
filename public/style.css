@@ -1,0 +1,109 @@
+body
+{
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.inr,
+.btc
+{
+    height: 2rem;
+    width: 2rem; 
+     padding:7px 20px;
+    color: white;
+     background-color: rgb(59, 60, 65); 
+    position: relative;
+    top: 3rem;
+    left: 12rem;
+    border-radius: .75rem;
+    margin-left: 1rem;
+}
+.buy
+{
+    height: 2rem;
+    width: 2rem; 
+    padding:7px 20px;
+    color: white;
+    background-color: rgb(59, 60, 65);
+    position: relative;
+    top: 3rem;
+    left: 12rem;
+    border-radius: .75rem;
+    margin-left: 1rem;
+}
+.timer
+{
+    position: relative;
+    left: 14rem;
+    top:3rem ;
+    margin-left: 1.5rem;
+    display: inline-block;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    border: 3px solid cyan;
+    text-align: center;
+    line-height:-6px;
+}
+.telegram
+{
+    position: relative;
+    left: 14rem;
+    top:3rem ;
+    margin-left: 1.5rem;
+    display:inline-block;
+    background-color: rgb(98, 184, 184);
+    padding: .5rem 1.5rem;
+    border-radius: .8rem;
+}
+
+#top-image
+{
+    width: 94vw;
+    margin: 2rem;
+
+}
+#bottom-image
+{
+    width: 94vw;
+    margin: 2rem;
+}
+.fa-telegram
+{
+    position:relative;
+    left: -.5rem;
+    transform: scale(1.2,1.2);
+}
+.base_unit
+{
+    position: relative;
+    left: 15rem;
+}
+.add-button
+{
+    position:fixed;
+   bottom: 3px;
+   left: 44%;
+   margin: 0 auto;
+   background-color: rgb(29, 27, 29);
+}
+.add-button:hover
+{
+    background-color: rgb(7, 150, 150);
+    color: white;
+}
+.footer
+{
+    width: 100vw;
+    height: 3rem;
+    
+    position: fixed;
+    bottom: 0px;
+}
+.form-switch
+{
+    position: relative;
+    top: 1rem;
+    left:33rem;
+}

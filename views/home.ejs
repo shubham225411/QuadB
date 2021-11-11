@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://use.fontawesome.com/30fe65c6aa.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body class="text-light body" >
+    <div class="row">
+        <div class="col-3">
+                <p class="text-info fs-1">HODLINFO</p>
+                <p class="fs-2">Powered By <span class="text-info">Finstreet</span><p>
+        </div>
+        <div class="col-4">
+            <span class="inr ">
+                <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="text-decoration: none;color: white;">
+                    INR
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">INR</a></li>
+                    
+                  </ul>
+            </span>
+            <span class="btc dropdown">
+                <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="text-decoration: none;color: white;">
+                    BTC
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">BTC</a></li>
+                    <li><a class="dropdown-item" href="#">ETH</a></li>
+                    <li><a class="dropdown-item" href="#">USDT</a></li>
+                    <li><a class="dropdown-item" href="#">XRP</a></li>
+                    <li><a class="dropdown-item" href="#">TRX</a></li>
+                    <li><a class="dropdown-item" href="#">DASH</a></li>
+                    <li><a class="dropdown-item" href="#">ZEC</a></li>
+                    <li><a class="dropdown-item" href="#">XEM</a></li>
+                    <li><a class="dropdown-item" href="#">IOST</a></li>
+                    <li><a class="dropdown-item" href="#">WIN</a></li>
+                    <li><a class="dropdown-item" href="#">BTT</a></li>
+                    <li><a class="dropdown-item" href="#">WRX</a></li>
+                    
+                  </ul>
+
+            </span>
+            <span class="buy">BUY BTC</span>
+        </div>
+        <div class="col-5">
+            <span class="timer"></span>
+            
+            <span class="telegram"> <i class="fa fa-telegram" aria-hidden="true"></i>Connect Telegram</span>
+            <div class="form-check form-switch">
+                <input class="form-check-input bg-dark switch" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+              </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <img id="top-image" src="../cryptonews.54869ee3.png" alt="">
+        </div>
+    </div>
+    
+    <div class="row mt-2">
+        <% for( let i in info) { %>
+            <ul class="list-group row">
+                <li class="list-group-item mb-3  text-white fw-bolder" style="width: 95%;margin-left: 4%;border-radius: .8rem;padding: 15px 0px 15px 0px; background-color: rgb(61, 61, 61);">
+                    <div class="col-10 offset-1 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xsm-8">
+                        <div class="row">
+                            <div class="col-2">
+                                <%= info[i].name %>
+                            </div>
+                            <div class="col-3">
+                                <%= info[i].last %> 
+                            </div>
+                            <div class="col-4">
+                                <%= info[i].buy %>/<%= info[i].sell %>  
+                            </div>
+                            <div class="col-2">
+                                <%= info[i].volume %> 
+                            </div>
+                            <div class="col-1 base_unit"><%= info[i].base_unit %> </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <% } %>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <img id="bottom-image" src="../banneriost.208a75ba.jpg" alt="">
+        </div>
+    </div>
+
+    <footer class="footer bg-dark">
+       
+            <button class="add-button btn btn-outline-info" style="display: block;">Add hodlinfo to home screen</button>
+        
+    </footer>
+
+
+    <script src="../script.js"></script>
+   
+  </body>
+</html>
